@@ -39,7 +39,7 @@ const spamFilter = (req: express.Request, res: express.Response, next: express.N
 }
 
 router.post("/", validate, spamFilter, (req, res) => {
-  // sendMail(req.body);
+  sendMail(req.body);
   res.send({msg: "Takk for henvendelsen"})
 })
 
