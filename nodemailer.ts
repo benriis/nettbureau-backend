@@ -10,16 +10,16 @@ const transporter = nodemailer.createTransport({
   host: 'smtp.ethereal.email',
   port: 587,
   auth: {
-    user: 'brad.gleichner81@ethereal.email',
-    pass: 'tvHrPY6DEnd694Sjdg'
+    user: 'username',
+    pass: 'password'
   }
 });
 
 
 export const sendMail = (body: Form) => {
   let message = {
-    from: "brad.gleichner81@ethereal.email",
-    to: "brad.gleichner81@ethereal.email",
+    from: "sender",
+    to: "reciever",
     subject: "Form",
     html: `<h1>HTML version<h1>\n<p>name: ${body.name}</p>\n<p>phone: ${body.phone}</p>\n<p>email: ${body.email}</p>`
   }
