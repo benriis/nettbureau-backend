@@ -1,5 +1,9 @@
 import nodemailer from "nodemailer";
 
+/**
+ * Code below was taken from https://ethereal.email/
+ */
+
 type Form = {
   name: string,
   phone: string,
